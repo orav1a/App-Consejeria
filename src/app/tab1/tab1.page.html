@@ -1,18 +1,16 @@
-<ion-header>
-  <div style="text-align: center; color: white; font-family: 'Arial', sans-serif;">
-    <ion-img src="assets/img/lit.png" style="height: 100px; width: 200px; margin: 0 auto"></ion-img>
-    <ion-label style="font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: bold;">Geocentro Marin 382</ion-label>
-  </div>
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <div style="text-align: center; color: white; font-family: 'Arial', sans-serif;">
+      <ion-icon size="large" name="business-sharp"></ion-icon>
+      <ion-label style="font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: bold;"> Geocentro Marin 382</ion-label>
+    </div>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <!-- Clima -->
-<<<<<<< HEAD
 
   <ion-card style="background-color: #00A86B; color: white; margin-top: 5%;">
-=======
-  <ion-card style="background-color: #012c56; color: white; margin-top: 5%;">
->>>>>>> da130b8dbd292a5b57e2593ab46bd79d5b6ced0b
     <div
       class="clima"
       *ngIf="weatherData"

@@ -1,3 +1,13 @@
+ion-toolbar {
+  --background: linear-gradient(132deg, rgb(12,197,143) 0%, rgb(9,56,102) 60%);
+
+
+}
+
+::ng-deep ion-header {
+  background: linear-gradient(132deg, rgb(12,197,143) 0%, rgb(9,56,102) 60%);
+
+}
 /* Estilo para la imagen cuando disponible es true */
 .disponible {
   width: 10px; /* Ajusta el tamaño según tus necesidades */
