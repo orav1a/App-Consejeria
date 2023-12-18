@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-img
+    src="assets/estduoc.png"
+    style="height: 100px; width: 200px; margin: 0 auto"
+  ></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="wrapper">
+    <div *ngIf="!loading" class="body">
+      <img class="logo" src="../../assets/fotos/logo.png" alt="Login" id="shakeImage" class="fire-animation">
+      <form style="margin-top: 10%;" (ngSubmit)="registrar()" [formGroup]="registrarUsuario" class="form">
+        <div style="margin-top: 10%;" class="form-floating">
+          <label>Correo electrónico</label>
+          <br>
+          <input style="margin-top: 5%;" type="email" class="form-control" formControlName="email"
+            placeholder="nombre@ejemplo.com">
+          <span *ngIf="registrarUsuario.get('email')?.hasError('required') && registrarUsuario.get('email')?.touched"
+            class="text-danger errorLabel">
+            El <strong>correo</strong> es requerido
+          </span>
+          <span *ngIf="registrarUsuario.get('email')?.hasError('email') && registrarUsuario.get('email')?.touched"
+            class="text-danger errorLabel">
+            El <strong>correo</strong> es inválido
+          </span>
+        </div>
+        <div style="margin-top: 5%;" class="form-floating">
+          <label>Contraseña</label>
+          <br>
+          <input style="margin-top: 5%;" type="password" class="form-control" formControlName="password"
+            placeholder="contraseña">
+          <span
+            *ngIf="registrarUsuario.get('password')?.hasError('required') && registrarUsuario.get('password')?.touched"
+            class="text-danger errorLabel">
+            La <strong>contraseña</strong> es requerida
+          </span>
+          <span
+            *ngIf="registrarUsuario.get('password')?.hasError('minlength') && registrarUsuario.get('password')?.touched"
+            class="text-danger errorLabel">
+            La <strong>contraseña</strong> debe tener al menos 6 caracteres
+          </span>
+        </div>
+        <div style="margin-top: 5%;" class="form-floating">
+          <label>Repetir contraseña</label>
+          <br>
+          <input style="margin-top: 5%;" type="password" class="form-control" formControlName="repetirPassword"
+            placeholder="repetir contraseña">
+        </div>
+        <div class="d-grid gap-2">
+          <ion-button style="background-color: #2b84bc;" class="btn btn-primary btn-lg" [disabled]="registrarUsuario.invalid" type="submit"
+            style="margin-top: 10%;">Crear cuenta</ion-button>
+            <!-- <ion-button color="warning" [routerLink]="['/tabs/tab3']">Back</ion-button> -->
+            <p class="mt-3">¿Tienes una cuenta? <a style="color: #2b84bc;" [routerLink]="['/login']">Inicia sesión</a></p>
+          </div>
+      </form>
+    </div>
+    <ion-spinner *ngIf="loading"></ion-spinner>
+  </div>
+</ion-content>

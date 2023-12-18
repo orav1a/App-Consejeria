@@ -1,0 +1,45 @@
+<!-- tab3.page.html -->
+<ion-header [translucent]="true">
+  <ion-img
+    src="assets/estduoc.png"
+    style="height: 100px; width: 200px; margin: 0 auto"
+  ></ion-img>
+</ion-header>
+
+<ion-content>
+  <div style="text-align: center; margin-top: 10%">
+    <ion-card *ngIf="isLoginIn">
+      <br />
+      <ion-card-header>
+        <ion-title>
+          <span style="color: #ffb800">Credenciales</span>
+          <span style="color: white">QR</span>
+        </ion-title>
+      </ion-card-header>
+      <br />
+      <qrcode [qrdata]="qr" [width]="300" class="qrcode"></qrcode>
+      <ion-card-header style="color: white">
+        Datos del Usuario:
+      </ion-card-header>
+      <ion-card-content>
+        <h1 class="textColor" style="color: white">{{ dataUser.email }}</h1>
+        <ion-note *ngIf="preferencial === true"
+          >Usuario preferencial <ion-icon name="accessibility"></ion-icon
+        ></ion-note>
+        <br />
+        <div class="textColor" *ngIf="nro_est == 0">
+          El usuario no tiene un número de estacionamiento asignado.
+        </div>
+        <div class="textColor" *ngIf="nro_est > 0">
+          El número de estacionamiento asignado es:
+          <h1>{{ nro_est }}</h1>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button color="danger" class="button" (click)="logOut()">
+      <ion-icon name="log-out-outline"></ion-icon>
+      Cerrar sesión
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,86 @@
+::ng-deep ion-header{
+  background-color:#012c56;
+
+}
+
+/* tab3.page.scss */
+
+/* Estilos para centrar el código QR */
+.all1{
+margin-top :20%
+}
+.qrcode-container {
+margin-top: -50%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 70vh; /* Esto garantiza que todo el contenido esté centrado verticalmente y ocupe toda la altura de la pantalla */
+}
+
+/* Estilos para hacer el código QR más grande */
+.qrcode-container qrcode canvas {
+width: 400px; /* Ajusta el ancho según tus preferencias */
+height: 400px; /* Ajusta la altura según tus preferencias */
+}
+
+/* Estilos para el contenedor del perfil */
+.profile-picture {
+text-align: center;
+margin-top: 20px;
+}
+
+.profile-picture {
+width: 150px; /* Ajusta el tamaño del marco redondo según tus preferencias */
+height: 150px; /* Ajusta el tamaño del marco redondo según tus preferencias */
+border-radius: 50%; /* Hace que el marco sea redondo */
+border: 3px solid #fff; /* Borde blanco alrededor del marco */
+background-color: #ccc; /* Color de fondo del marco (puedes cambiarlo según tus preferencias) */
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+color: #fff; /* Color del texto en el marco (puedes cambiarlo según tus preferencias) */
+margin: 0 auto; /* Centra horizontalmente */
+margin-top: 20px; /* Espacio superior */
+text-align: center; 
+}
+
+/* Estilos para la información personal */
+.profile-info {
+text-align: center;
+margin-top: 20px;
+}
+
+.profile-info h2 {
+font-size: 24px; /* Tamaño de fuente para el nombre */
+}
+
+.profile-info p {
+font-size: 16px; /* Tamaño de fuente para los detalles personales */
+}
+.textColor{
+  color: white;
+}
+ion-modal {
+  --height: 50%;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+ion-modal::part(backdrop) {
+  background: rgba(209, 213, 219);
+  opacity: 1;
+}
+
+ion-modal ion-toolbar {
+  --background: rgb(14 116 144);
+  --color: white;
+}
+
+ion-card {
+  background: linear-gradient(132deg, rgba(31,91,149,1) 0%, rgba(1,44,86,1) 40%);
+}
+
+.qrcode {
+  border-radius: 20px;
+}

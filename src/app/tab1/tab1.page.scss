@@ -1,0 +1,85 @@
+ion-header {
+	--background: #012c56;
+	--color: #012c56;
+}
+
+::ng-deep ion-header {
+	background-color: #012c56;
+
+}
+
+
+ion-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 20px;
+	height: 100%;
+	--color: white;
+	/* Asegura que el contenido ocupe toda la altura disponible */
+}
+
+.total-disponibles,
+.clima {
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+.feriado{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+ion-card-title{
+	color: #fff;
+}
+
+.icon{
+	width: 45px;
+	height: 45px;
+}
+
+.animated-card {
+	--ion-background-color: #fff;
+	--ion-border-radius: 10px;
+	--box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	margin: 20px;
+	
+  }
+  
+  .animated-number {
+	font-size: 6rem;
+	color: #fff;
+	animation: breath 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes breath {
+	0% {
+	  transform: scale(1);
+	}
+	100% {
+	  transform: scale(1.1);
+	}
+  }
+
+ion-card {
+	position: relative;
+	padding: 1.5rem;
+	background: linear-gradient(132deg, rgba(31,91,149,1) 0%, rgba(1,44,86,1) 40%);
+	border-radius: 2.5rem;
+	swiper {
+		div {
+			ion-label {
+				p.acc-amt {
+					margin: 1rem 0;
+					font-size: 3rem;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

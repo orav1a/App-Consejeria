@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-img
+    src="assets/estduoc.png"
+    style="height: 100px; width: 200px; margin: 0 auto"
+  ></ion-img>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Clima -->
+
+  <ion-card style="background-color: #012c56; color: white; margin-top: 5%;">
+    <div
+      class="clima"
+      *ngIf="weatherData"
+      style="
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <ion-title>Clima</ion-title>
+      <p>{{ weatherData.main.temp }} °C {{ weatherData.name }}</p>
+      <div style="display: flex; align-items: center">
+        <p>{{ weatherData.weather[0].description }}</p>
+        <img class="icon" [src]="urlIcon" alt="" style="margin-left: 10px" />
+      </div>
+    </div>
+  </ion-card>
+
+  <!-- Estacionamientos disponibles -->
+  <ion-card class="animated-card" style="background-color: #012c56;">
+    <ion-card-header>
+      <ion-card-title>Total de estacionamientos disponibles:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="animated-number">{{ totalDisponibles }}</div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Feriado -->
+  <ion-card style="background-color: #012c56; color: white;">
+    <h2 style="text-align: center; margin-top: 10%">Próximo feriado</h2>
+    <div class="feriado" *ngIf="feriadoMasCercano">
+      <ion-title>{{ feriadoMasCercano.title }}</ion-title>
+      <p>{{ feriadoMasCercano.date }}</p>
+    </div>
+  </ion-card>
+</ion-content>

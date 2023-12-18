@@ -1,0 +1,37 @@
+@keyframes breathe {
+    0% {
+      transform: scale(0.8); /* Estado inicial con un 80% de escala */
+    }
+    50% {
+      transform: scale(1); /* Escalado al 100% en la mitad de la animación */
+    }
+    100% {
+      transform: scale(0.8); /* Vuelve al 80% de escala */
+    }
+  }
+  
+  .loading-container .pizza-spinner {
+    animation: breathe 2s ease-in-out infinite; /* Ajusta la duración según tus necesidades */
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loading img {
+    width: 100px; /* Ajusta el tamaño según tus necesidades (por ejemplo, 100px) */
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
