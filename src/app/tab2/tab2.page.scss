@@ -21,3 +21,21 @@
   background-color:#012c56;
 
 }
+
+ion-card {
+	position: relative;
+	padding: 1.5rem;
+	background: linear-gradient(132deg, rgb(12,197,143) 0%, rgb(9,56,102) 60%);
+	border-radius: 2.5rem;
+	swiper {
+		div {
+			ion-label {
+				p.acc-amt {
+					margin: 1rem 0;
+					font-size: 3rem;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

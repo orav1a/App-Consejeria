@@ -1,8 +1,8 @@
 // Tab bar flotante
 ion-tabs {
   ion-tab-bar {
-      --background: #012c56;
-      --color: white;
+      --background: #00A86B;
+      --color: #F8E3A1;
 
       position: relative;
       width: 90%;
@@ -24,27 +24,27 @@ ion-tabs {
 
 
 ion-tab-button.tab-selected[tab="tab1"] {
-color: #FFB800; 
+color: #da9e09;
 }
 
 ion-tab-button.tab-selected[tab="tab2"] {
-color: #FFB800; 
+color: #da9e09;
 }
 
 
 ion-tab-button.tab-selected[tab="tab3"] {
-color: #FFB800; 
+color: #da9e09;
 }
 
 
 ion-tab-button.tab-selected[tab="tab"] {
-color:#FFB800; 
+color:#da9e09;
 }
 ion-tab-button.tab-selected[tab="login"] {
-color:#FFB800; 
+color:#da9e09;
 }
 
 ion-tab-button.tab-selected[tab="login"]:hover{
---color:#FFB800; 
+--color:#da9e09;
 }
 

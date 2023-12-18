@@ -1,14 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar st>
-    <ion-img
-    src="assets/estduoc.png"
-    style="height: 100px; width: 200px; margin: 0 auto"></ion-img>
+    <div style="text-align: center; color: white; font-family: 'Arial', sans-serif;">
+      <ion-img src="assets/img/lit.png" style="height: 100px; width: 200px; margin: 0 auto"></ion-img>
+      <ion-label style="font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: bold;">Geocentro Marin 382</ion-label>
+    </div>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <div class="wrapper">
     <div *ngIf="!loading" class="body">
-      <img class="logo" src="../../assets/fotos/logo.png" alt="Login" id="shakeImage" class="fire-animation">
+      <img  style="border-radius: 50%;" class="logo" src="../../assets/img/lc.jpg" alt="Login" id="shakeImage" class="fire-animation">
       <form style="margin-top: 10%;" (ngSubmit)="login()" [formGroup]="loginUsuario" class="form">
         <div style="margin-top: 10%;" class="form-floating">
           <label>Correo electrónico</label>

@@ -42,7 +42,7 @@ font-size: 24px;
 color: #fff; /* Color del texto en el marco (puedes cambiarlo según tus preferencias) */
 margin: 0 auto; /* Centra horizontalmente */
 margin-top: 20px; /* Espacio superior */
-text-align: center; 
+text-align: center;
 }
 
 /* Estilos para la información personal */
@@ -78,8 +78,10 @@ ion-modal ion-toolbar {
 }
 
 ion-card {
-  background: linear-gradient(132deg, rgba(31,91,149,1) 0%, rgba(1,44,86,1) 40%);
+  background: linear-gradient(132deg, rgb(12,197,143) 0%, rgb(9,56,102) 60%);
 }
+
+
 
 .qrcode {
   border-radius: 20px;
