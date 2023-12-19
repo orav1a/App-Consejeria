@@ -1,34 +1,62 @@
-// Tab bar flotante
-ion-tabs {
-  ion-tab-bar {
-      --background:#0cc58f;
-      --color:white;
-  }
+// // Tab bar flotante
+// ion-tabs {
+//   ion-tab-bar {
+//       --background:#0cc58f;
+//       --color:white;
+//   }
+// }
+/* Color para el botón 'Residente' */
+
+
+/* Contenedor de los botones */
+ion-tab-bar {
+  --background: transparent;
+  background-image: linear-gradient(132deg, rgb(12,197,143) 0%, rgb(9,56,102) 60%);
 }
 
-
-ion-tab-button.tab-selected[tab="tab1"] {
-color: #da9e09;
+/* Color para el botón 'Residente' */
+ion-tab-button[tab="tab1"] {
+  --background: transparent;
+  --color-selected: white;
+  --color: yellow;
 }
 
-ion-tab-button.tab-selected[tab="tab2"] {
-color: #da9e09;
+/* Color para el botón 'Administrativo' */
+ion-tab-button[tab="tab2"] {
+  --background: transparent;
+  --color-selected: white;
+  --color: yellow;
 }
 
-
-ion-tab-button.tab-selected[tab="tab3"] {
-color: #da9e09;
+/* Color para el botón 'Usuario' */
+ion-tab-button[tab="tab3"] {
+  --background: transparent;
+  --color-selected: white;
+  --color: yellow;
 }
 
+// ion-tab-button.tab-selected[tab="tab1"] {
+// color: #da9e09;
+// }
 
-ion-tab-button.tab-selected[tab="tab"] {
-color:#da9e09;
-}
-ion-tab-button.tab-selected[tab="login"] {
-color:#da9e09;
-}
+// ion-tab-button.tab-selected[tab="tab2"] {
+// color: #da9e09;
+// }
 
-ion-tab-button.tab-selected[tab="login"]:hover{
---color:#da9e09;
-}
+
+// ion-tab-button.tab-selected[tab="tab3"] {
+// color: #da9e09;
+// }
+
+
+// ion-tab-button.tab-selected[tab="tab"] {
+// color:#da9e09;
+// }
+// ion-tab-button.tab-selected[tab="login"] {
+// color:#da9e09;
+// }
+
+// ion-tab-button.tab-selected[tab="login"]:hover{
+// --color:#da9e09;
+// }
 
